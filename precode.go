@@ -79,7 +79,7 @@ func main() {
 				if !ok {
 					return
 				}
-				atomic.AddInt64(&amounts[i], 1)
+				amounts[i]++
 				chOut <- num
 			}
 
